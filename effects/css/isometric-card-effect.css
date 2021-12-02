@@ -1,0 +1,38 @@
+.isometric-card{
+    transform: rotateX(60deg) rotateZ(-45deg);
+    transition: transform 200ms;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+
+    position: absolute;
+}
+
+.isometric-card-1{
+    transform: rotateX(60deg) rotateZ(-45deg) translateZ(6px);
+    background-color: rgb(228, 62, 126);
+    z-index: 3;
+}
+.isometric-card-2{
+    transform: rotateX(60deg) rotateZ(-45deg) translateZ(3px);
+    background-color: rgb(170, 45, 93);
+    z-index: 2;
+}
+.isometric-card-3{
+    transform: rotateX(60deg) rotateZ(-45deg) translateZ(0px);
+    background-color: rgb(118, 31, 64);
+    z-index: 1;
+}
+
+.isometric-card-container:hover .isometric-card-1{
+    transform: rotateX(60deg) rotateZ(-45deg) translateZ(20px);
+}
+
+.isometric-card-container:hover .isometric-card-2{
+    transform: rotateX(60deg) rotateZ(-45deg) translateZ(10px);
+}
+
+.isometric-card-container:hover .isometric-card-3{
+    transform: rotateX(60deg) rotateZ(-45deg) translateZ(0px);
+}
